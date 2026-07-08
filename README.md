@@ -20,12 +20,12 @@ http://127.0.0.1:8000/index.html
 
 Para publicar a versão atual, envie estes arquivos para a pasta pública da hospedagem, normalmente `htdocs`:
 
-- `index.html`
-- `style.css`
-- `script.js`
-- `.htaccess`
+- `index.html` obrigatório: já contém HTML, CSS e JavaScript inline para evitar tela sem estilo quando algum asset não é enviado ou não é servido pela hospedagem.
+- `.htaccess` recomendado: configura charset, arquivo inicial e headers simples.
+- `style.css` opcional: cópia de manutenção do CSS.
+- `script.js` opcional: cópia de manutenção do JavaScript.
 
-A versão atual não usa PHP nem MySQL ainda. Ela funciona como front-end estático e todos os dados são simulados no navegador.
+A versão atual não usa PHP nem MySQL ainda. Ela funciona como front-end estático e todos os dados são simulados no navegador. Se aparecer sem estilo, confirme que você subiu o `index.html` atualizado desta versão, pois ele agora é autocontido.
 
 Depois do upload, acesse o domínio da hospedagem. Exemplos:
 
